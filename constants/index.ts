@@ -1,4 +1,4 @@
-import arrowBack from "../assets/icons/arrow-back.png";
+import arrowBack from "@/assets/icons/arrow-back.png";
 import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowRight from "@/assets/icons/arrow-right.png";
 import bag from "@/assets/icons/bag.png";
@@ -178,7 +178,9 @@ export const images = {
     pizzaOne,
     salad,
     success,
-    tomatoes,
+    tomatoes
+};
+export const icons = {
     arrowBack,
     arrowDown,
     arrowRight,
@@ -199,4 +201,4 @@ export const images = {
     star,
     trash,
     user,
-};
+}
