@@ -1,8 +1,9 @@
-import CustomButton from "@/component/CustomButton";
-import CustomInput from "@/component/CustomInput";
+import { View, Text, Button, Alert } from "react-native";
 import { Link, router } from "expo-router";
 import { useState } from "react";
-import { Alert, Text, View } from "react-native";
+import { signIn } from "@/lib/appwrite";
+import CustomInput from "@/component/CustomInput";
+import CustomButton from "@/component/CustomButton";
 
 const SignIn = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,9 +19,11 @@ const SignIn = () => {
       );
 
     setIsSubmitting(true);
+
     try {
-      Alert.alert("Success", "User signed in successfully.");
-      router.push("/");
+      await signIn({ email, password });
+
+      router.replace("/");
     } catch (error: any) {
       Alert.alert("Error", error.message);
     } finally {
