@@ -40,6 +40,7 @@ import pizzaOne from "@/assets/images/pizza-one.png";
 import salad from "@/assets/images/salad.png";
 import success from "@/assets/images/success.png";
 import tomatoes from "@/assets/images/tomatoes.png";
+import { populateParams } from "expo-router/build/fork/getStateFromPath-forks";
 
 export const CATEGORIES = [
     {
@@ -178,8 +179,15 @@ export const images = {
     pizzaOne,
     salad,
     success,
-    tomatoes
+    tomatoes,
+    bag,
+    plus,
+    trash,
+    minus,
+    arrowBack,
+    search
 };
+
 export const icons = {
     arrowBack,
     arrowDown,
