@@ -19,7 +19,7 @@ export const appwriteConfig = {
   categoriesCollectionId: "686a4d4c002c9f55d203",
   menuCollectionId: "686a4e0500017d3d3481",
   customizationsCollectionId: "686a521d000e048050d9",
-  menu_customizationsCollectionId: "686a54490016db7f62b9",
+  menuCustomizationsCollectionId: "686a54490016db7f62b9",
 };
 
 export const client = new Client(); 
