@@ -14,10 +14,15 @@ export const appwriteConfig = {
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
   platform: "com.nana.food_delivery",
   databaseId: "686968f90024870ef066",
+  bucketId: "686a5681001139284116",
   userCollectionId: "68696b41000375d06d53",
+  categoriesCollectionId: "686a4d4c002c9f55d203",
+  menuCollectionId: "686a4e0500017d3d3481",
+  customizationsCollectionId: "686a521d000e048050d9",
+  menu_customizationsCollectionId: "686a54490016db7f62b9",
 };
 
-export const client = new Client();
+export const client = new Client(); 
 client
   .setEndpoint(appwriteConfig.endpoint!)
   .setProject(appwriteConfig.projectId!)
